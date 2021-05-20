@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "764445034582",
+    "project_id": "fueg-748a5",
+    "storage_bucket": "fueg-748a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764445034582:android:9c8d178acc44e0484cd3f7",
+        "android_client_info": {
+          "package_name": "com.example.firebase_upload_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764445034582-g5og2042hqr7o322d3cd1u4apvvcsd7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWdXnOBaNtwAtKuiBDg7qTI_X--ZN37fQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764445034582-g5og2042hqr7o322d3cd1u4apvvcsd7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

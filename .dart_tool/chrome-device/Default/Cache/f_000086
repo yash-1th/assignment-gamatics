@@ -1,0 +1,860 @@
+define(['dart_sdk', 'packages/flutter/src/material/app.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/firebase_upload_example/Screens/list_screen.dart', 'packages/path/src/path_set.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/material/page.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/material/elevated_button.dart', 'packages/flutter/src/material/material_state.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/firebase_upload_example/widget/button_widget.dart', 'packages/file_picker/src/file_picker_io.dart', 'packages/firebase_upload_example/api/firebase_api.dart', 'packages/flutter/src/widgets/async.dart', 'packages/firebase_storage/firebase_storage.dart', 'packages/flutter/src/material/progress_indicator.dart', 'packages/flutter/src/services/system_chrome.dart', 'packages/firebase_core/firebase_core.dart'], (function load__packages__firebase_upload_example__main_dart(dart_sdk, packages__flutter__src__material__app$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__firebase_upload_example__Screens__list_screen$46dart, packages__path__src__path_set$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__material__page$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__material__elevated_button$46dart, packages__flutter__src__material__material_state$46dart, packages__flutter__src__painting__strut_style$46dart, packages__firebase_upload_example__widget__button_widget$46dart, packages__file_picker__src__file_picker_io$46dart, packages__firebase_upload_example__api__firebase_api$46dart, packages__flutter__src__widgets__async$46dart, packages__firebase_storage__firebase_storage$46dart, packages__flutter__src__material__progress_indicator$46dart, packages__flutter__src__services__system_chrome$46dart, packages__firebase_core__firebase_core$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _js_helper = dart_sdk._js_helper;
+  const _interceptors = dart_sdk._interceptors;
+  const ui = dart_sdk.ui;
+  const io = dart_sdk.io;
+  const async = dart_sdk.async;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const app = packages__flutter__src__material__app$46dart.src__material__app;
+  const theme_data = packages__flutter__src__material__icon_button$46dart.src__material__theme_data;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const icon_button = packages__flutter__src__material__icon_button$46dart.src__material__icon_button;
+  const button_style = packages__flutter__src__material__icon_button$46dart.src__material__button_style;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const binding = packages__flutter__src__widgets__widget_span$46dart.src__widgets__binding;
+  const list_screen = packages__firebase_upload_example__Screens__list_screen$46dart.Screens__list_screen;
+  const path = packages__path__src__path_set$46dart.path;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const elevated_button = packages__flutter__src__material__elevated_button$46dart.src__material__elevated_button;
+  const material_state = packages__flutter__src__material__material_state$46dart.src__material__material_state;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const button_widget = packages__firebase_upload_example__widget__button_widget$46dart.widget__button_widget;
+  const file_picker = packages__file_picker__src__file_picker_io$46dart.src__file_picker;
+  const firebase_api = packages__firebase_upload_example__api__firebase_api$46dart.api__firebase_api;
+  const async$ = packages__flutter__src__widgets__async$46dart.src__widgets__async;
+  const firebase_storage = packages__firebase_storage__firebase_storage$46dart.firebase_storage;
+  const progress_indicator = packages__flutter__src__material__progress_indicator$46dart.src__material__progress_indicator;
+  const system_chrome = packages__flutter__src__services__system_chrome$46dart.src__services__system_chrome;
+  const firebase_core = packages__firebase_core__firebase_core$46dart.firebase_core;
+  var main = Object.create(dart.library);
+  var $single = dartx.single;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    BuildContextToListScreen: () => (T.BuildContextToListScreen = dart.constFn(dart.fnType(list_screen.ListScreen, [framework.BuildContext])))(),
+    BuildContextToWidget: () => (T.BuildContextToWidget = dart.constFn(dart.fnType(framework.Widget, [framework.BuildContext])))(),
+    IdentityMapOfString$BuildContextToWidget: () => (T.IdentityMapOfString$BuildContextToWidget = dart.constFn(_js_helper.IdentityMap$(core.String, T.BuildContextToWidget())))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    StreamBuilderOfTaskSnapshot: () => (T.StreamBuilderOfTaskSnapshot = dart.constFn(async$.StreamBuilder$(firebase_storage.TaskSnapshot)))(),
+    AsyncSnapshotOfTaskSnapshot: () => (T.AsyncSnapshotOfTaskSnapshot = dart.constFn(async$.AsyncSnapshot$(firebase_storage.TaskSnapshot)))(),
+    BuildContextAndAsyncSnapshotOfTaskSnapshotToWidget: () => (T.BuildContextAndAsyncSnapshotOfTaskSnapshotToWidget = dart.constFn(dart.fnType(framework.Widget, [framework.BuildContext, T.AsyncSnapshotOfTaskSnapshot()])))(),
+    JSArrayOfDeviceOrientation: () => (T.JSArrayOfDeviceOrientation = dart.constFn(_interceptors.JSArray$(system_chrome.DeviceOrientation)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C1() {
+      return C[1] = dart.constList([], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 39,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "debugShowCheckedModeBanner",
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "theme",
+        [_Location_column]: 9,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "home",
+        [_Location_column]: 9,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "routes",
+        [_Location_column]: 9,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6, C[7] || CT.C7, C[8] || CT.C8, C[9] || CT.C9], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 41,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12], widget_inspector._Location);
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 58,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 63,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 57,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 13,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tooltip",
+        [_Location_column]: 13,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19, C[20] || CT.C20, C[21] || CT.C21], widget_inspector._Location);
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 62,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "centerTitle",
+        [_Location_column]: 9,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "actions",
+        [_Location_column]: 9,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26], widget_inspector._Location);
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29], widget_inspector._Location);
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 94,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 19,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.constList([C[32] || CT.C32, C[33] || CT.C33, C[34] || CT.C34], widget_inspector._Location);
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[31] || CT.C31,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 88,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 24,
+        [_Location_line]: 96,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37], widget_inspector._Location);
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 96,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 98,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 99,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40, C[41] || CT.C41], widget_inspector._Location);
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 97,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 24,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.constList([C[44] || CT.C44], widget_inspector._Location);
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[43] || CT.C43,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 101,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 17,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 17,
+        [_Location_line]: 104,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onClicked",
+        [_Location_column]: 17,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47, C[48] || CT.C48, C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 102,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 24,
+        [_Location_line]: 107,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52], widget_inspector._Location);
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 107,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 57,
+        [_Location_line]: 108,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 13,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 82,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.constList([C[56] || CT.C56, C[57] || CT.C57], widget_inspector._Location);
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[55] || CT.C55,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 80,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C59() {
+      return C[59] = dart.constList([C[60] || CT.C60], widget_inspector._Location);
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[59] || CT.C59,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 79,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.constList([C[63] || CT.C63, C[64] || CT.C64], widget_inspector._Location);
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[62] || CT.C62,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67, C[68] || CT.C68], widget_inspector._Location);
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 56,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "value",
+        [_Location_column]: 15,
+        [_Location_line]: 155,
+        [_Location_file]: null
+      });
+    },
+    get C70() {
+      return C[70] = dart.constList([C[71] || CT.C71], widget_inspector._Location);
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[70] || CT.C70,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 154,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 159,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "stream",
+        [_Location_column]: 9,
+        [_Location_line]: 143,
+        [_Location_file]: null
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 9,
+        [_Location_line]: 144,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.constList([C[75] || CT.C75, C[76] || CT.C76], widget_inspector._Location);
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[74] || CT.C74,
+        [_Location_name]: null,
+        [_Location_column]: 48,
+        [_Location_line]: 142,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 23,
+        [_Location_file]: "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart"
+      });
+    }
+  }, false);
+  var C = Array(78).fill(void 0);
+  var I = [
+    "file:///C:/Users/yashwanth/ywork/firebase_upload_example/lib/main.dart",
+    "package:firebase_upload_example/main.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  main.MyApp = class MyApp extends framework.StatelessWidget {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 30, 29, "context");
+      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, title: main.MyApp.title, theme: theme_data.ThemeData.new({primarySwatch: colors.Colors.green}), home: new main.MainPage.new({$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), routes: new (T.IdentityMapOfString$BuildContextToWidget()).from(["/listscreen", dart.fn(context => {
+            if (context == null) dart.nullFailed(I[0], 38, 27, "context");
+            return new list_screen.ListScreen.new({$creationLocationd_0dea112b090073317d4: C[2] || CT.C2});
+          }, T.BuildContextToListScreen())]), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3});
+    }
+  };
+  (main.MyApp.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    main.MyApp.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = main.MyApp.prototype;
+  dart.addTypeTests(main.MyApp);
+  dart.addTypeCaches(main.MyApp);
+  dart.setMethodSignature(main.MyApp, () => ({
+    __proto__: dart.getMethods(main.MyApp.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(main.MyApp, I[1]);
+  dart.defineLazy(main.MyApp, {
+    /*main.MyApp.title*/get title() {
+      return "Firebase Upload";
+    }
+  }, false);
+  main.MainPage = class MainPage extends framework.StatefulWidget {
+    createState() {
+      return new main._MainPageState.new();
+    }
+  };
+  (main.MainPage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    main.MainPage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = main.MainPage.prototype;
+  dart.addTypeTests(main.MainPage);
+  dart.addTypeCaches(main.MainPage);
+  dart.setMethodSignature(main.MainPage, () => ({
+    __proto__: dart.getMethods(main.MainPage.__proto__),
+    createState: dart.fnType(main._MainPageState, [])
+  }));
+  dart.setLibraryUri(main.MainPage, I[1]);
+  main._MainPageState = class _MainPageState extends framework.State$(main.MainPage) {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 53, 29, "context");
+      let fileName = this.file != null ? path.basename(dart.nullCheck(this.file).path) : "No File Selected";
+      return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new(main.MyApp.title, {$creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), centerTitle: true, actions: T.JSArrayOfWidget().of([new icon_button.IconButton.new({icon: new icon.Icon.new(icons.Icons.shopping_cart, {$creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), tooltip: "Open shopping cart", onPressed: dart.fn(() => {
+                navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => {
+                    if (context == null) dart.nullFailed(I[0], 71, 45, "context");
+                    return new list_screen.ListScreen.new({$creationLocationd_0dea112b090073317d4: C[16] || CT.C16});
+                  }, T.BuildContextToListScreen())}));
+              }, T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17})]), $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), body: new container.Container.new({padding: new edge_insets.EdgeInsets.all(32.0), child: new basic.Center.new({child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: T.JSArrayOfWidget().of([new elevated_button.ElevatedButton.new({style: new button_style.ButtonStyle.new({backgroundColor: material_state.MaterialStateProperty.all(ui.Color, colors.Colors.red)}), onPressed: dart.bind(this, 'selectFile'), child: new text.Text.new("Select file", {$creationLocationd_0dea112b090073317d4: C[27] || CT.C27}), $creationLocationd_0dea112b090073317d4: C[30] || CT.C30}), new basic.SizedBox.new({height: 8.0, $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), new text.Text.new(fileName, {style: new text_style.TextStyle.new({fontSize: 16.0, fontWeight: ui.FontWeight.w500}), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), new basic.SizedBox.new({height: 48.0, $creationLocationd_0dea112b090073317d4: C[42] || CT.C42}), new button_widget.ButtonWidget.new({text: "Upload File", icon: icons.Icons.cloud_upload_outlined, onClicked: dart.bind(this, 'uploadFile'), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C[50] || CT.C50}), this.task != null ? this.buildUploadStatus(dart.nullCheck(this.task)) : new container.Container.new({$creationLocationd_0dea112b090073317d4: C[53] || CT.C53})]), $creationLocationd_0dea112b090073317d4: C[54] || CT.C54}), $creationLocationd_0dea112b090073317d4: C[58] || CT.C58}), $creationLocationd_0dea112b090073317d4: C[61] || CT.C61}), $creationLocationd_0dea112b090073317d4: C[65] || CT.C65});
+    }
+    selectFile() {
+      return async.async(dart.dynamic, (function* selectFile() {
+        let result = (yield file_picker.FilePicker.platform.pickFiles({allowMultiple: false}));
+        if (result == null) return;
+        let path = dart.nullCheck(result.files[$single].path);
+        this.setState(dart.fn(() => this.file = io.File.new(path), T.VoidTovoid()));
+      }).bind(this));
+    }
+    uploadFile() {
+      return async.async(dart.dynamic, (function* uploadFile() {
+        if (this.file == null) return;
+        let fileName = path.basename(dart.nullCheck(this.file).path);
+        let destination = "files/" + dart.str(fileName);
+        this.task = firebase_api.FirebaseApi.uploadFile(destination, dart.nullCheck(this.file));
+        this.setState(dart.fn(() => {
+        }, T.VoidTovoid()));
+        if (this.task == null) return;
+        let snapshot = (yield dart.nullCheck(this.task).whenComplete(dart.fn(() => {
+        }, T.VoidToNull())));
+        let urlDownload = (yield snapshot.ref.getDownloadURL());
+        core.print("Download-Link: " + dart.str(urlDownload));
+      }).bind(this));
+    }
+    buildUploadStatus(task) {
+      if (task == null) dart.nullFailed(I[0], 142, 39, "task");
+      return new (T.StreamBuilderOfTaskSnapshot()).new({stream: task.snapshotEvents, builder: dart.fn((context, snapshot) => {
+          if (context == null) dart.nullFailed(I[0], 144, 19, "context");
+          if (snapshot == null) dart.nullFailed(I[0], 144, 28, "snapshot");
+          if (dart.test(snapshot.hasData)) {
+            let snap = dart.nullCheck(snapshot.data);
+            let progress = dart.notNull(snap.bytesTransferred) / dart.notNull(snap.totalBytes);
+            return new progress_indicator.CircularProgressIndicator.new({value: progress, $creationLocationd_0dea112b090073317d4: C[69] || CT.C69});
+          } else {
+            return new container.Container.new({$creationLocationd_0dea112b090073317d4: C[72] || CT.C72});
+          }
+        }, T.BuildContextAndAsyncSnapshotOfTaskSnapshotToWidget()), $creationLocationd_0dea112b090073317d4: C[73] || CT.C73});
+    }
+  };
+  (main._MainPageState.new = function() {
+    this.task = null;
+    this.file = null;
+    main._MainPageState.__proto__.new.call(this);
+    ;
+  }).prototype = main._MainPageState.prototype;
+  dart.addTypeTests(main._MainPageState);
+  dart.addTypeCaches(main._MainPageState);
+  dart.setMethodSignature(main._MainPageState, () => ({
+    __proto__: dart.getMethods(main._MainPageState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext]),
+    selectFile: dart.fnType(async.Future, []),
+    uploadFile: dart.fnType(async.Future, []),
+    buildUploadStatus: dart.fnType(framework.Widget, [firebase_storage.UploadTask])
+  }));
+  dart.setLibraryUri(main._MainPageState, I[1]);
+  dart.setFieldSignature(main._MainPageState, () => ({
+    __proto__: dart.getFields(main._MainPageState.__proto__),
+    task: dart.fieldType(dart.nullable(firebase_storage.UploadTask)),
+    file: dart.fieldType(dart.nullable(io.File))
+  }));
+  main.main = function main$() {
+    return async.async(dart.dynamic, function* main$() {
+      binding.WidgetsFlutterBinding.ensureInitialized();
+      yield system_chrome.SystemChrome.setPreferredOrientations(T.JSArrayOfDeviceOrientation().of([system_chrome.DeviceOrientation.portraitUp, system_chrome.DeviceOrientation.portraitDown]));
+      yield firebase_core.Firebase.initializeApp();
+      binding.runApp(new main.MyApp.new({$creationLocationd_0dea112b090073317d4: C[77] || CT.C77}));
+    });
+  };
+  dart.trackLibraries("packages/firebase_upload_example/main.dart", {
+    "package:firebase_upload_example/main.dart": main
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":"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","file":"../../../../../packages/firebase_upload_example/main.dart.lib.js"}');
+  // Exports:
+  return {
+    main: main
+  };
+}));
+
+//# sourceMappingURL=main.dart.lib.js.map

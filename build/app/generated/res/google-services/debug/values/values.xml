@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">764445034582-g5og2042hqr7o322d3cd1u4apvvcsd7r.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">764445034582</string>
+    <string name="google_api_key" translatable="false">AIzaSyCWdXnOBaNtwAtKuiBDg7qTI_X--ZN37fQ</string>
+    <string name="google_app_id" translatable="false">1:764445034582:android:9c8d178acc44e0484cd3f7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCWdXnOBaNtwAtKuiBDg7qTI_X--ZN37fQ</string>
+    <string name="google_storage_bucket" translatable="false">fueg-748a5.appspot.com</string>
+    <string name="project_id" translatable="false">fueg-748a5</string>
+</resources>
